@@ -15,3 +15,16 @@ DetectorDemo/Pods/
 DetectorDemo/CameraTest.xcworkspace/xcuserdata/
 DetectorDemo/CameraTest.xcodeproj/xcuserdata/
 
+# SwiftPM (additional)
+Packages/
+
+# Xcode (general user data)
+xcuserdata/
+
+# SwiftPM specific files
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspacedata/contents.xcworkspacedata
+
+# Local credentials (if present in repo root or subdirs)
+.netrc
+
