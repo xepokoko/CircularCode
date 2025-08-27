@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F38EC21B-882E-4297-AAF3-A291C4E9C56E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD26C604-A8FD-45F9-A60D-481F9E693DD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CameraTest/PJCameraView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "photoOutput(_:didFinishProcessingPhoto:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD9EF31A-30AD-4433-A297-BB799EA8A7DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CameraTest/PJCameraView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "photoOutput(_:didFinishCapturingDeferredPhotoProxy:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57849DAA-5AB0-4B00-B3FE-72C1F49DF0E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CameraTest/PJCameraView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "addPhotoOutput()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "57849DAA-5AB0-4B00-B3FE-72C1F49DF0E9 - 55c0479683c6af60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CameraTest.PJCameraView.addPhotoOutput() -&gt; ()"
+                  moduleName = "CameraTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xieenping/Documents/CameraTest/CameraTest/PJCameraView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "57849DAA-5AB0-4B00-B3FE-72C1F49DF0E9 - 55c0479683c6af60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CameraTest.PJCameraView.addPhotoOutput() -&gt; ()"
+                  moduleName = "CameraTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xieenping/Documents/CameraTest/CameraTest/PJCameraView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC19E5E1-7729-4C45-A4C4-B27873DECB84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CameraTest/PJ/PJCameraView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "photoOutput(_:didFinishCapturingDeferredPhotoProxy:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC19E5E1-7729-4C45-A4C4-B27873DECB84 - 5cd1bae9f9798bd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CameraTest.PJCameraView.photoOutput(_: __C.AVCapturePhotoOutput, didFinishCapturingDeferredPhotoProxy: Swift.Optional&lt;__C.AVCaptureDeferredPhotoProxy&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "CameraTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xieenping/Documents/CameraTest/CameraTest/PJ/PJCameraView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "CC19E5E1-7729-4C45-A4C4-B27873DECB84 - 5cd1bae9f9798bd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CameraTest.PJCameraView.photoOutput(_: __C.AVCapturePhotoOutput, didFinishCapturingDeferredPhotoProxy: Swift.Optional&lt;__C.AVCaptureDeferredPhotoProxy&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "CameraTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xieenping/Documents/CameraTest/CameraTest/PJ/PJCameraView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
