@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6012FF82CDF45E1002DFCCA /* ScrollViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6012FF72CDF45E1002DFCCA /* ScrollViewTestController.swift */; };
 		A601E0932CDA4201002DFCCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601E0922CDA4201002DFCCA /* AppDelegate.swift */; };
 		A601E0952CDA4201002DFCCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601E0942CDA4201002DFCCA /* SceneDelegate.swift */; };
 		A601E0972CDA4201002DFCCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601E0962CDA4201002DFCCA /* ViewController.swift */; };
@@ -17,17 +16,16 @@
 		A601E0A72CDA4664002DFCCA /* PJCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601E0A62CDA4664002DFCCA /* PJCameraView.swift */; };
 		A601E0AA2CDB202D002DFCCA /* PJCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601E0A92CDB202D002DFCCA /* PJCameraViewController.swift */; };
 		A601E0AC2CDB561B002DFCCA /* CameraBottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A601E0AB2CDB561B002DFCCA /* CameraBottomControlView.swift */; };
-		A66F98492D1C1DFB0061859C /* LivePhotoVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F98482D1C1DFB0061859C /* LivePhotoVideoViewController.swift */; };
-		A68104692D2D5A8200F88F77 /* REDCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68104682D2D5A8200F88F77 /* REDCodeViewController.swift */; };
-		A681046E2D2D61A200F88F77 /* RCOpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A681046D2D2D61A200F88F77 /* RCOpenCVWrapper.mm */; };
-		A6F4499D2D5384700098208B /* REDCodeDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6F4499B2D5384700098208B /* REDCodeDetect.cpp */; };
+		A68104692D2D5A8200F88F77 /* CircularCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68104682D2D5A8200F88F77 /* CircularCodeViewController.swift */; };
+		A681046E2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A681046D2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.mm */; };
+		A6CB23322E60089300701AA3 /* code11.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CB23312E60089300701AA3 /* code11.png */; };
+		A6F4499D2D5384700098208B /* CircularCodeDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6F4499B2D5384700098208B /* CircularCodeDetect.cpp */; };
 		DAF5A0A1561A9FC861028C14 /* Pods_CameraTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CD4E6B388B6F4673A8B560 /* Pods_CameraTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73CD4E6B388B6F4673A8B560 /* Pods_CameraTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC76FE6AEA47F9C8F30478C /* Pods-CameraTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraTest.debug.xcconfig"; path = "Target Support Files/Pods-CameraTest/Pods-CameraTest.debug.xcconfig"; sourceTree = "<group>"; };
-		A6012FF72CDF45E1002DFCCA /* ScrollViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTestController.swift; sourceTree = "<group>"; };
 		A601E08F2CDA4201002DFCCA /* CameraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A601E0922CDA4201002DFCCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A601E0942CDA4201002DFCCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,13 +37,13 @@
 		A601E0A62CDA4664002DFCCA /* PJCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCameraView.swift; sourceTree = "<group>"; };
 		A601E0A92CDB202D002DFCCA /* PJCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJCameraViewController.swift; sourceTree = "<group>"; };
 		A601E0AB2CDB561B002DFCCA /* CameraBottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraBottomControlView.swift; sourceTree = "<group>"; };
-		A66F98482D1C1DFB0061859C /* LivePhotoVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoVideoViewController.swift; sourceTree = "<group>"; };
-		A68104682D2D5A8200F88F77 /* REDCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REDCodeViewController.swift; sourceTree = "<group>"; };
+		A68104682D2D5A8200F88F77 /* CircularCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCodeViewController.swift; sourceTree = "<group>"; };
 		A681046B2D2D61A200F88F77 /* CameraTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		A681046C2D2D61A200F88F77 /* RCOpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCOpenCVWrapper.h; sourceTree = "<group>"; };
-		A681046D2D2D61A200F88F77 /* RCOpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCOpenCVWrapper.mm; sourceTree = "<group>"; };
-		A6F4499B2D5384700098208B /* REDCodeDetect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = REDCodeDetect.cpp; sourceTree = "<group>"; };
-		A6F4499C2D5384700098208B /* REDCodeDetect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = REDCodeDetect.hpp; sourceTree = "<group>"; };
+		A681046C2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularCodeOpenCVWrapper.h; sourceTree = "<group>"; };
+		A681046D2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CircularCodeOpenCVWrapper.mm; sourceTree = "<group>"; };
+		A6CB23312E60089300701AA3 /* code11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code11.png; sourceTree = "<group>"; };
+		A6F4499B2D5384700098208B /* CircularCodeDetect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircularCodeDetect.cpp; sourceTree = "<group>"; };
+		A6F4499C2D5384700098208B /* CircularCodeDetect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularCodeDetect.hpp; sourceTree = "<group>"; };
 		CDEAF417598D75F7C9490D19 /* Pods-CameraTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraTest.release.xcconfig"; path = "Target Support Files/Pods-CameraTest/Pods-CameraTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,14 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6012FF62CDF45C7002DFCCA /* Scorll */ = {
-			isa = PBXGroup;
-			children = (
-				A6012FF72CDF45E1002DFCCA /* ScrollViewTestController.swift */,
-			);
-			path = Scorll;
-			sourceTree = "<group>";
-		};
 		A601E0862CDA4201002DFCCA = {
 			isa = PBXGroup;
 			children = (
@@ -91,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				A68104672D2D5A2000F88F77 /* RECodeRecognition */,
-				A66F98472D1C1DA90061859C /* LivePhoto */,
-				A6012FF62CDF45C7002DFCCA /* Scorll */,
 				A601E0A82CDB1FDD002DFCCA /* PJ */,
 				A601E0922CDA4201002DFCCA /* AppDelegate.swift */,
 				A601E0942CDA4201002DFCCA /* SceneDelegate.swift */,
@@ -115,25 +103,26 @@
 			path = PJ;
 			sourceTree = "<group>";
 		};
-		A66F98472D1C1DA90061859C /* LivePhoto */ = {
-			isa = PBXGroup;
-			children = (
-				A66F98482D1C1DFB0061859C /* LivePhotoVideoViewController.swift */,
-			);
-			path = LivePhoto;
-			sourceTree = "<group>";
-		};
 		A68104672D2D5A2000F88F77 /* RECodeRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				A68104682D2D5A8200F88F77 /* REDCodeViewController.swift */,
-				A681046C2D2D61A200F88F77 /* RCOpenCVWrapper.h */,
-				A681046D2D2D61A200F88F77 /* RCOpenCVWrapper.mm */,
+				A6CB23302E60087700701AA3 /* ImageSource */,
+				A68104682D2D5A8200F88F77 /* CircularCodeViewController.swift */,
+				A681046C2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.h */,
+				A681046D2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.mm */,
 				A681046B2D2D61A200F88F77 /* CameraTest-Bridging-Header.h */,
-				A6F4499B2D5384700098208B /* REDCodeDetect.cpp */,
-				A6F4499C2D5384700098208B /* REDCodeDetect.hpp */,
+				A6F4499B2D5384700098208B /* CircularCodeDetect.cpp */,
+				A6F4499C2D5384700098208B /* CircularCodeDetect.hpp */,
 			);
 			path = RECodeRecognition;
+			sourceTree = "<group>";
+		};
+		A6CB23302E60087700701AA3 /* ImageSource */ = {
+			isa = PBXGroup;
+			children = (
+				A6CB23312E60089300701AA3 /* code11.png */,
+			);
+			path = ImageSource;
 			sourceTree = "<group>";
 		};
 		EE72B69053B94DC93B274AC4 /* Frameworks */ = {
@@ -215,6 +204,7 @@
 			files = (
 				A601E09F2CDA4203002DFCCA /* LaunchScreen.storyboard in Resources */,
 				A601E09C2CDA4203002DFCCA /* Assets.xcassets in Resources */,
+				A6CB23322E60089300701AA3 /* code11.png in Resources */,
 				A601E09A2CDA4201002DFCCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,15 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A681046E2D2D61A200F88F77 /* RCOpenCVWrapper.mm in Sources */,
+				A681046E2D2D61A200F88F77 /* CircularCodeOpenCVWrapper.mm in Sources */,
 				A601E0AC2CDB561B002DFCCA /* CameraBottomControlView.swift in Sources */,
-				A66F98492D1C1DFB0061859C /* LivePhotoVideoViewController.swift in Sources */,
-				A6F4499D2D5384700098208B /* REDCodeDetect.cpp in Sources */,
+				A6F4499D2D5384700098208B /* CircularCodeDetect.cpp in Sources */,
 				A601E0972CDA4201002DFCCA /* ViewController.swift in Sources */,
 				A601E0932CDA4201002DFCCA /* AppDelegate.swift in Sources */,
 				A601E0952CDA4201002DFCCA /* SceneDelegate.swift in Sources */,
-				A6012FF82CDF45E1002DFCCA /* ScrollViewTestController.swift in Sources */,
-				A68104692D2D5A8200F88F77 /* REDCodeViewController.swift in Sources */,
+				A68104692D2D5A8200F88F77 /* CircularCodeViewController.swift in Sources */,
 				A601E0A72CDA4664002DFCCA /* PJCameraView.swift in Sources */,
 				A601E0AA2CDB202D002DFCCA /* PJCameraViewController.swift in Sources */,
 			);

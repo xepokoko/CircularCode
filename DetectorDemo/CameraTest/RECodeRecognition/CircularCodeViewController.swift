@@ -8,8 +8,12 @@
 import UIKit
 import Photos
 
-class REDCodeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+class CircularCodeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    // 内置资源名（设置后将自动加载并解码）
+    var builtInAssetName: String?
+    private var didAutoRun = false
+    
     lazy var selectImageBtn: UIButton = {
         let btn = UIButton()
         btn.backgroundColor = .gray
@@ -43,6 +47,31 @@ class REDCodeViewController: UIViewController, UIImagePickerControllerDelegate, 
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // 自动加载内置测试图并解码（仅执行一次）
+        if let name = builtInAssetName, !didAutoRun {
+            didAutoRun = true
+            if let image = UIImage(named: name) {
+                renderTargetImage(image)
+                overlayViews.forEach { $0.removeFromSuperview() }
+                overlayViews.removeAll()
+                self.detectCircles(in: image)
+                let wrapper = CircularCodeOpenCVWrapper()
+                if let text = wrapper.decodeCircularCode(with: image) {
+                    print("Decoded: \(text)")
+                    self.showDecodedText(text)
+                } else {
+                    print("Decode failed")
+                    self.showDecodedText("Decode failed")
+                }
+            } else {
+                print("Asset not found: \(name)")
+                self.showDecodedText("Asset not found: \(name)")
+            }
+        }
+    }
+    
     func setupUI() {
         view.backgroundColor = .white
         selectImageBtn.addTarget(self, action: #selector(imageBtnClick), for: .touchUpInside)
@@ -65,6 +94,10 @@ class REDCodeViewController: UIViewController, UIImagePickerControllerDelegate, 
             imageContext.bottomAnchor.constraint(equalTo: selectImageBtn.topAnchor, constant: -20)
         ])
         
+        // 如果是内置模式，隐藏选择按钮
+        if builtInAssetName != nil {
+            selectImageBtn.isHidden = true
+        }
     }
     
     @objc 
@@ -102,14 +135,34 @@ class REDCodeViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
         overlayViews.removeAll()
         
-        // 将选中的图片传递给检测方法
+        // 定位并绘制示意
         self.detectCircles(in: image)
         
-//        // 获取边缘图
-//        let opencvWrapper = RCOpenCVWrapper()
-//        let edgesView = opencvWrapper.getImagesEdges(image)
-//        self.imageView.image = edgesView
+        // 解码
+        let wrapper = CircularCodeOpenCVWrapper()
+        if let text = wrapper.decodeCircularCode(with: image) {
+            print("Decoded: \(text)")
+            self.showDecodedText(text)
+        } else {
+            print("Decode failed")
+        }
         
+    }
+    
+    private func showDecodedText(_ text: String) {
+        let label = UILabel()
+        label.text = text
+        label.numberOfLines = 0
+        label.textColor = .white
+        label.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        imageView.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 20),
+            label.topAnchor.constraint(equalTo: imageView.topAnchor, constant: 20),
+            label.widthAnchor.constraint(lessThanOrEqualToConstant: 600)
+        ])
+        overlayViews.append(label)
     }
     
     private func renderTargetImage(_ image: UIImage) {
@@ -123,7 +176,7 @@ class REDCodeViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
 
     private func detectCircles(in image: UIImage) {
-        let opencvWrapper = RCOpenCVWrapper()
+        let opencvWrapper = CircularCodeOpenCVWrapper()
         let array = opencvWrapper.getLocationFlagPosition(with: image)
         signLocationFlags(array)
     }
@@ -166,45 +219,13 @@ class REDCodeViewController: UIViewController, UIImagePickerControllerDelegate, 
 }
 
 
-extension REDCodeViewController: UIScrollViewDelegate {
+extension CircularCodeViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
 }
 
 class OverlayView: UIView {
-//    var centerPoint: CGPoint
-//    var sideLength: CGFloat
-//
-//    init(frame: CGRect, center: CGPoint, sideLength: CGFloat) {
-//        self.centerPoint = center
-//        self.sideLength = sideLength
-//        super.init(frame: frame)
-//        self.backgroundColor = UIColor.clear // 确保背景透明
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//
-//    override func draw(_ rect: CGRect) {
-//        guard let context = UIGraphicsGetCurrentContext() else { return }
-//        
-//        // 计算正方形的起始点
-//        let originX = centerPoint.x - sideLength / 2
-//        let originY = centerPoint.y - sideLength / 2
-//        let squareRect = CGRect(x: originX, y: originY, width: sideLength, height: sideLength)
-//
-//        // 设置边框颜色和线宽
-//        context.setStrokeColor(UIColor.green.cgColor)
-//        context.setLineWidth(2.0)
-//        
-//        // 添加正方形路径
-//        context.addRect(squareRect)
-//        
-//        // 绘制路径
-//        context.strokePath()
-//    }
     var centerPoint: CGPoint
        var radius: CGFloat
 

@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RCOpenCVWrapper : NSObject
+@interface CircularCodeOpenCVWrapper : NSObject
 
 
 @end

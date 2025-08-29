@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let titles = ["PJCamera", "ScrollTest", "livePhoto", "REDCode"]
+    let titles = ["PJCamera", "REDCode"]
     let pageControllers: [UIViewController.Type] = [PJCameraViewController.self]
     
     lazy var table: UITableView = {
@@ -60,13 +60,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let controller = PJCameraViewController()
             self.navigationController?.pushViewController(controller, animated: true)
         } else if indexPath.row == 1 {
-            let controller = ScrollViewTestController()
-            self.navigationController?.pushViewController(controller, animated: true)
-        } else if indexPath.row == 2 {
-            let controller = LivePhotoVideoViewController()
-            self.navigationController?.pushViewController(controller, animated: true)
-        } else if indexPath.row == 3 {
-            let controller = REDCodeViewController()
+            let controller = CircularCodeViewController()
+            controller.builtInAssetName = "CodeTest"
             self.navigationController?.pushViewController(controller, animated: true)
         }
         

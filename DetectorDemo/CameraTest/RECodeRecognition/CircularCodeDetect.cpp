@@ -5,7 +5,7 @@
 //  Created by 谢恩平 on 2025/2/5.
 //
 
-#include "REDCodeDetect.hpp"
+#include "CircularCodeDetect.hpp"
 #import <opencv2/opencv.hpp>
 
 namespace cv

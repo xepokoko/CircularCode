@@ -18,7 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windwoScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windwoScene)
-        let root = UINavigationController(rootViewController: ViewController())
+        let vc = CircularCodeViewController()
+        vc.builtInAssetName = "CodeTest"
+        let formatter = ISO8601DateFormatter()
+        let ts = formatter.string(from: Date())
+        print("[Launch] Enter decode page at \(ts)")
+        let root = UINavigationController(rootViewController: vc)
         window.rootViewController = root
         self.window = window
         window.makeKeyAndVisible()
